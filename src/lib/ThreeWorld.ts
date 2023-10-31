@@ -68,7 +68,7 @@ export class ThreeWorld{
           this.loader.load("./Hayabusa2.glb",(glb)=>{
             let hayabusa2=glb.scene;
             hayabusa2.position.set(0,0,0);
-            hayabusa2.scale.set(0.6,0.6,0.6);
+            hayabusa2.scale.set(0.05,0.05,0.05);
             hayabusa.add(hayabusa2);
           });
           this.hayabusa_list.push(hayabusa);
