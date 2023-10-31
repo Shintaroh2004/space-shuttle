@@ -87,7 +87,7 @@ export class ThreeWorld{
     
         // レンダラーの初期化
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
-        this.renderer.setClearColor(0xffffff, 1.0); // 背景色
+        this.renderer.setClearColor(0x000000, 1.0); // 背景色
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.renderer.setSize(appElement.offsetWidth, appElement.offsetHeight);
     
