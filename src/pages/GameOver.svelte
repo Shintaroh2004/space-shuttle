@@ -14,13 +14,9 @@
 
 <style>
     .gopage{
-        text-align:center;
-        line-height: 14vh;
+        line-height:10vh;
         background-color: gray;
         color: darkblue;
-        width: 16vw;
-        height: 14vh;
-        border-radius: 10%;
     }
 </style>
 
@@ -28,9 +24,6 @@
 <main>
     <h1>Your score is</h1>
     <h1> {score} </h1>
-
-    <h2>See you again</h2>
-
     <div class="gopage" bind:this={home}>Back to Home</div>
 
 </main>

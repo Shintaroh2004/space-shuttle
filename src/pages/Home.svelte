@@ -18,12 +18,9 @@
 
 <style>
     .gopage{
-        text-align:center;
         line-height: 14vh;
         background-color: gray;
         color: darkblue;
-        width: 16vw;
-        height: 14vh;
         border-radius: 10%;
     }
 </style>

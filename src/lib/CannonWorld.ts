@@ -45,10 +45,10 @@ export class CannonWorld{
         for(let i=0;i<8;i+=1){
             let meteo_collider = new CANNON.Body({mass: 0,material:this.meteoMat});
             meteo_collider.addShape(new CANNON.Box(new CANNON.Vec3(0.2,0.2,0.2)));
-            meteo_collider.position.set(5*(Math.random()-0.5),5*(Math.random()-0.5),5*(Math.random()-0.5));
+            meteo_collider.position.set(10*(Math.random()-0.5),10*(Math.random()-0.5),10*(Math.random()-0.5));
             meteo_collider.angularDamping = 0.1;
             meteo_collider.addEventListener("collide",()=>{
-                meteo_collider.position.set(5*(Math.random()-0.5),5*(Math.random()-0.5),5*(Math.random()-0.5));
+                meteo_collider.position.set(10*(Math.random()-0.5),10*(Math.random()-0.5),10*(Math.random()-0.5));
                 this.point+=10;
             })
             this.meteo_collider_list.push(meteo_collider);
@@ -60,10 +60,10 @@ export class CannonWorld{
         for(let i=0;i<4;i+=1){
             let hayabusa_collider = new CANNON.Body({mass: 0,material:this.hayabusaMat});
             hayabusa_collider.addShape(new CANNON.Box(new CANNON.Vec3(0.2,0.2,0.2)));
-            hayabusa_collider.position.set(5*(Math.random()-0.5),5*(Math.random()-0.5),5*(Math.random()-0.5));
+            hayabusa_collider.position.set(10*(Math.random()-0.5),10*(Math.random()-0.5),10*(Math.random()-0.5));
             hayabusa_collider.angularDamping = 0.1;
             hayabusa_collider.addEventListener("collide",()=>{
-                hayabusa_collider.position.set(5*(Math.random()-0.5),5*(Math.random()-0.5),5*(Math.random()-0.5));
+                hayabusa_collider.position.set(10*(Math.random()-0.5),10*(Math.random()-0.5),10*(Math.random()-0.5));
                 this.point+=30;
             })
             this.hayabusa_collider_list.push(hayabusa_collider);
